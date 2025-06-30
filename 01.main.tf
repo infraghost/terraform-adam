@@ -19,7 +19,7 @@ resource "docker_image" "nginx" {
 #start the container
 resource "docker_container" "nginx" {
   name  = "nginx"
-  image = docker_image.nginx
+  image = docker_image.nginx.latest
 
   ports {
     internal = 80
