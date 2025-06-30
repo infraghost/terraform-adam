@@ -13,7 +13,7 @@ provider "docker" {
 
 #speciy the docker image
 resource "docker_image" "nginx" {
-  name = "nginx:latest"
+  name = "nginx"
 }
 
 #start the container
