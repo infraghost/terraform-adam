@@ -13,16 +13,16 @@ provider "docker" {
 
 #speciy the docker image
 resource "docker_image" "nginx" {
-  name = "nginx"
+  name = "nginx:latest"
 }
 
 #start the container
 resource "docker_container" "nginx" {
   name  = "nginx"
-  image = docker_image.nginx.latest
+  image = docker_image.nginx.name
 
   ports {
     internal = 80
-    external = 8080
+    external = 80
   }
 }
