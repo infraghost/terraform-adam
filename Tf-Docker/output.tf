@@ -1,5 +1,5 @@
 output "ip_address" {
-  value       = docker_container.nginx.ip_address
+  value       = docker_container.nginx.network_date[0].ip_address
   description = "value of the IP address of the container"
 }
 
