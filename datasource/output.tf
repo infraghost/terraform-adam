@@ -1,3 +1,3 @@
 output "azlist" {
-  value = data.aws_availability_zones.available.names
+  value = data.aws_availability_zones.available.names[0]
 }
