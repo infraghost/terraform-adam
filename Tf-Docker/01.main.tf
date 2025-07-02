@@ -13,12 +13,12 @@ provider "docker" {
 
 #speciy the docker image
 resource "docker_image" "nginx" {
-  name = "httpd"
+  name = var.image_name
 }
 
 #start the container
 resource "docker_container" "nginx" {
-  name  = "nginx"
+  name  = var.container_name
   image = docker_image.nginx.name
 
   ports {
