@@ -7,3 +7,10 @@ variable "image_name" {
 variable "container_name" {
   default = "noname"
 }
+
+variable "index" {
+  type        = number
+  description = "Index of the image to use from the list"
+  default     = 0
+
+}

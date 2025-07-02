@@ -13,8 +13,8 @@ provider "docker" {
 
 #speciy the docker image
 resource "docker_image" "nginx" {
-  name         = var.image_name[0] # Use the first image from the list
-  keep_locally = false             # Set to true if you want to keep the image locally after the container is created 
+  name         = var.image_name[var.index] # Use the first image from the list
+  keep_locally = false                     # Set to true if you want to keep the image locally after the container is created 
 }
 
 #start the container
