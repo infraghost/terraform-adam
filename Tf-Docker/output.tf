@@ -12,3 +12,7 @@ output "container_id" {
   value       = docker_container.nginx.id
   description = "value of the ID of the container"
 }
+output "image_name" {
+  value       = docker_image.nginx.name
+  description = "value of the name of the image"
+}
