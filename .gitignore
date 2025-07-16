@@ -1,0 +1,26 @@
+# Ignore Terraform state files
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/.terraform/
+
+# Ignore crash logs
+crash.log
+
+# Ignore Terraform plan output
+*.tfplan
+
+# Ignore sensitive variable files (if you use them)
+*.tfvars
+*.tfvars.json
+
+# Ignore lock file (optional, keep if you're pinning versions per environment)
+.terraform.lock.hcl
+
+# Ignore Mac/IDE/editor files
+.DS_Store
+*.swp
+*.swo
+*.bak
+
+# Ignore log files or debug output
+*.log
